@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Pincode Finder</string>
+
+    <string name="title">Search Pincode</string>
+    <string name="hint">Search</string>
+    <string name="radio_by_pincode">Pincode</string>
+    <string name="radio_by_office">Post Office</string>
+    <string name="state">State:</string>
+    <string name="district">District:</string>
+    <string name="taluk">Taluk:</string>
+    <string name="circle">Circle:</string>
+    <string name="region">Region:</string>
+    <string name="division">Division:</string>
+    <string name="office">Office Name:</string>
+    <string name="pincode">Pincode:</string>
+    <string name="branch_type">Branch Type:</string>
+    <string name="delivery">Delivery Status:</string>
+    <string name="no_network">Check Network Connection!!!</string>
+    <string name="empty_list">No Records Found!</string>
+</resources>

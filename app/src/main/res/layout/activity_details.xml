@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+
+    <TextView
+        android:id="@+id/office_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/red_500"
+        android:gravity="left"
+        android:paddingLeft="24dp"
+        tools:text="Bommasandra Industrial Area"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/office_name">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/column1"
+                android:text="@string/pincode"
+                app:layout_constraintBottom_toBottomOf="@+id/details_pincode"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/details_pincode" />
+
+            <TextView
+                android:id="@+id/details_pincode"
+                style="@style/column2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Ctrl-O" />
+
+            <TextView
+                style="@style/column1"
+                android:background="@color/grey_300"
+                android:text="@string/branch_type"
+                app:layout_constraintBottom_toBottomOf="@+id/details_branch_type"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/details_branch_type" />
+
+            <TextView
+                android:id="@+id/details_branch_type"
+                style="@style/column2"
+                android:background="@color/grey_300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/details_pincode"
+                tools:text="Ctrl-O" />
+
+            <TextView
+                style="@style/column1"
+                android:text="@string/delivery"
+                app:layout_constraintBottom_toBottomOf="@+id/details_delivery_status"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/details_delivery_status" />
+
+            <TextView
+                android:id="@+id/details_delivery_status"
+                style="@style/column2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/details_branch_type"
+                tools:text="Ctrl-O" />
+
+            <TextView
+                style="@style/column1"
+                android:background="@color/grey_300"
+                android:text="@string/circle"
+                app:layout_constraintBottom_toBottomOf="@+id/details_circle"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/details_circle" />
+
+            <TextView
+                android:id="@+id/details_circle"
+                style="@style/column2"
+                android:background="@color/grey_300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/details_delivery_status"
+                tools:text="Ctrl-O" />
+
+            <TextView
+                style="@style/column1"
+                android:text="@string/division"
+                app:layout_constraintBottom_toBottomOf="@+id/details_division"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/details_division" />
+
+            <TextView
+                android:id="@+id/details_division"
+                style="@style/column2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/details_circle"
+                tools:text="Ctrl-O" />
+
+            <TextView
+                style="@style/column1"
+                android:background="@color/grey_300"
+                android:text="@string/region"
+                app:layout_constraintBottom_toBottomOf="@+id/details_region"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/details_region" />
+
+            <TextView
+                android:id="@+id/details_region"
+                style="@style/column2"
+                android:background="@color/grey_300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/details_division"
+                tools:text="Ctrl-O" />
+
+            <TextView
+                style="@style/column1"
+                android:text="@string/district"
+                app:layout_constraintBottom_toBottomOf="@+id/details_district"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/details_district" />
+
+            <TextView
+                android:id="@+id/details_district"
+                style="@style/column2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/details_region"
+                tools:text="Ctrl-O" />
+
+            <TextView
+                style="@style/column1"
+                android:background="@color/grey_300"
+                android:text="@string/state"
+                app:layout_constraintBottom_toBottomOf="@+id/details_state"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/details_state" />
+
+            <TextView
+                android:id="@+id/details_state"
+                style="@style/column2"
+                android:background="@color/grey_300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/details_district"
+                tools:text="Ctrl-O" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/details_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_baseline_share_24"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
